@@ -14,9 +14,14 @@ div {
   text-align: center;
 }
 
+h1 {
+  color: #00FF21;
+  font-family: monospace;
+}
+
 #masterDiv {
   margin: auto;
-   padding: 75px 0;
+   padding: 150px 0;
 }
 
 
