@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  padding: 10px;
+}
+
+div {
+  text-align: center;
+}
+
+h1 {
+  color: #00FF21;
+  font-family: monospace;
+}
+
+
+#masterDiv {
+  margin: auto;
+   padding: 150px 0;
+}
+
+
+#target {
+  -webkit-animation: fade 1s alternate infinite;
+  animation: fade 1s alternate infinite;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
