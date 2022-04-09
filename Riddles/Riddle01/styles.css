@@ -23,9 +23,15 @@ h1 {
 
 #masterDiv {
   margin: auto;
-   padding: 150px 0;
+   padding: 200px 0;
 }
 
+
+
+#userInputDiv {
+  margin: auto;
+   padding: 30px 0;
+}
 
 #target {
   -webkit-animation: fade 1s alternate infinite;
@@ -52,8 +58,16 @@ h1 {
   }
 }
 
+#continueButton {
+  margin-top: 40px;
+  width: auto;
+}
+
+
+
 /* This is for the user input text field */
 .userInputReady {
+  text-transform: uppercase;
   font-family: monospace;
   text-align: center;
   padding: 10px;
@@ -86,6 +100,7 @@ h1 {
   padding: 10px 20px 10px 20px;
   border: solid #00FF21 2px;
   text-decoration: none;
+  width: 100px;
 }
 
 .submitButtonReady:hover {
@@ -115,6 +130,7 @@ h1 {
   border-radius: 0px;
   box-shadow: 0px 0px 5px rgba(66,66,66,.0);
   text-shadow: 0px 0px 5px rgba(66,66,66,.0);
+  cursor: not-allowed;
 }
 .userInputCooldown:focus {
      outline:none;
@@ -133,6 +149,7 @@ h1 {
   padding: 10px 20px 10px 20px;
   border: solid red 2px;
   text-decoration: none;
+  cursor: not-allowed;
 }
 
 .submitButtonCooldown:hover {

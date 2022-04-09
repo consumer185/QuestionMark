@@ -19,6 +19,10 @@ h1 {
   font-family: monospace;
 }
 
+img {
+  cursor: help;
+}
+
 #masterDiv {
   margin: auto;
    padding: 150px 0;

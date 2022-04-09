@@ -23,9 +23,15 @@ h1 {
 
 #masterDiv {
   margin: auto;
-   padding: 150px 0;
+   padding: 200px 0;
 }
 
+
+
+#userInputDiv {
+  margin: auto;
+   padding: 30px 0;
+}
 
 #target {
   -webkit-animation: fade 1s alternate infinite;
@@ -52,10 +58,16 @@ h1 {
   }
 }
 
+#continueButton {
+  margin-top: 40px;
+  width: auto;
+}
 
 
 
-#userInput {
+/* This is for the user input text field */
+.userInputReady {
+  text-transform: uppercase;
   font-family: monospace;
   text-align: center;
   padding: 10px;
@@ -69,13 +81,14 @@ h1 {
   box-shadow: 0px 0px 5px rgba(66,66,66,.0);
   text-shadow: 0px 0px 5px rgba(66,66,66,.0);
 }
- #userInput:focus {
+.userInputReady:focus {
      outline:none;
 }
 
 
 
-#submitButton {
+/* This is for the user submit button */
+.submitButtonReady {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0px;
@@ -87,11 +100,10 @@ h1 {
   padding: 10px 20px 10px 20px;
   border: solid #00FF21 2px;
   text-decoration: none;
-
-
-
+  width: 100px;
 }
-#submitButton:hover {
+
+.submitButtonReady:hover {
   color: white;
   background: black;
 
@@ -101,3 +113,53 @@ h1 {
   background-image: -o-linear-gradient(top, black, black);
   background-image: linear-gradient(to bottom, black, black);
   text-decoration: none;
+}
+
+
+/* Following a wrong answer, this is the temporary cooldown class for user text input */
+.userInputCooldown {
+  font-family: monospace;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  border-width: 2px;
+  border-color: red;
+  background-color: red;
+  color: black;
+  border-style: solid;
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px rgba(66,66,66,.0);
+  text-shadow: 0px 0px 5px rgba(66,66,66,.0);
+  cursor: not-allowed;
+}
+.userInputCooldown:focus {
+     outline:none;
+}
+
+/* Following a wrong answer, this is the temporary cooldown class for user submit button */
+.submitButtonCooldown {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+
+  font-family: monospace;
+  color: black;
+  font-size: 30px;
+  background: red;
+  padding: 10px 20px 10px 20px;
+  border: solid red 2px;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+
+.submitButtonCooldown:hover {
+  color: black;
+  background: black;
+
+  background-image: -webkit-linear-gradient(top, red, red);
+  background-image: -moz-linear-gradient(top, red, red);
+  background-image: -ms-linear-gradient(top, red, red);
+  background-image: -o-linear-gradient(top, red, red);
+  background-image: linear-gradient(to bottom, red, red);
+  text-decoration: none;
+}

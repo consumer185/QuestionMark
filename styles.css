@@ -7,6 +7,7 @@ a {
 }
 
 img {
+  cursor: help;
   padding: 10px;
 }
 
@@ -19,6 +20,10 @@ div {
    padding: 75px 0;
 }
 
+
+div {
+  cursor: help;
+}
 
 #target {
   -webkit-animation: fade 1s alternate infinite;

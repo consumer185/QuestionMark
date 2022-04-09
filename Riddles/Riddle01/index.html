@@ -9,35 +9,23 @@
 
 <body>
 
-<div id="question">
+  <div id="masterDiv">
+    <div id="question">
+      <h1>How many months have 28 days?</h1>
+    </div>
+    <div id="userInputDiv">
+      <input id="userInput" onfocus="this.value=''" class="userInputReady" type="text" name="" value="???">
+      <input id="submitButton" class="submitButtonReady" type="submit" value="OK">
+    </div>
+    <div id="answerDiv">
+      <a hidden id="continue" href="../../HubPages/HubPage01/index.html">
+        <input id="continueButton" class="submitButtonReady" type="submit" value="correct! click to continue">
+      </a>
+    </div>
 
-
-  <h1>How many months have 28 days?</h1>
-
-</div>
-
-  <div id="userInputDiv">
-
-
-  <input id="userInput" class="userInputReady" type="text" name="" value="???">
-  <input id="submitButton" class="submitButtonReady" type="submit" value="OK">
-
-</div>
-
-
-<div id="answerDiv">
-
-
-  <h1 id="answer"> </h1>
-
-  <a hidden id="continue" href="../../HubPages/HubPage01/index.html">
-    <input id="submitButton" type="submit" value="continue">
-  </a>
-
-</div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="index.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </div>
 </body>
 
 </html>

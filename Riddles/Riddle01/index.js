@@ -1,19 +1,32 @@
-/*
-This is the correct answer for this specific page, obviously change it for each individual page!
-*/
+var correctAnswer = ["12", "ALL OF THEM", "TWELVE", "ALL 12", "ALL TWELVE"]; //the correct answer(s) for this specific page
 
-var correctAnswer = "12";
-
+userInput.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("submitButton").click();
+  }
+});
 
 $("#submitButton").click(function() {
   checkAnswer();
 });
 
-
 function checkAnswer() {
-  if ($("#userInput").val() === correctAnswer) {
+  var convertedAnswer = $("#userInput").val();
+  convertedAnswer = convertedAnswer.toUpperCase();
+if (correctAnswer.includes(convertedAnswer)) {
     answerIsCorrect();
-  } else {
+  }
+  else if (convertedAnswer === "") {
+    console.log("nothing entered");
+  }
+  else if (convertedAnswer === "???") {
+    console.log("nothing entered");
+  }
+ else {
     answerIsWrong();
   }
 }
@@ -23,6 +36,8 @@ function answerIsCorrect() {
   $("#answer").show();
   $("#answer").text("yes");
   $("#continue").show();
+  $("#userInput").prop("disabled", true);
+  $("#submitButton").prop("disabled", true);
 }
 
 function answerIsWrong() {
@@ -39,43 +54,25 @@ function cooldown() {
   $("#userInput").addClass("userInputCooldown");
   $("#submitButton").addClass("submitButtonCooldown");
   $("#submitButton").prop("disabled", true);
+  $("#userInput").prop("disabled", true);
+  $("#submitButton").val("10");
 
   setTimeout(function() {
     $("#submitButton").prop("disabled", false);
+    $("#userInput").prop("disabled", false);
     $("#userInput").removeClass("userInputCooldown");
     $("#submitButton").removeClass("submitButtonCooldown");
-  }, 10000);
-
-//submit button cooldown display
-  $("#submitButton").val("10");
-  setTimeout(function() {
-    $("#submitButton").val("09");
-  }, 1000);
-  setTimeout(function() {
-    $("#submitButton").val("08");
-  }, 2000);
-  setTimeout(function() {
-    $("#submitButton").val("07");
-  }, 3000);
-  setTimeout(function() {
-    $("#submitButton").val("06");
-  }, 4000);
-  setTimeout(function() {
-    $("#submitButton").val("05");
-  }, 5000);
-  setTimeout(function() {
-    $("#submitButton").val("04");
-  }, 6000);
-  setTimeout(function() {
-    $("#submitButton").val("03");
-  }, 7000);
-  setTimeout(function() {
-    $("#submitButton").val("02");
-  }, 8000);
-  setTimeout(function() {
-    $("#submitButton").val("01");
-  }, 9000);
-  setTimeout(function() {
     $("#submitButton").val("OK");
   }, 10000);
+
+// for cooldown timer of 10 seconds
+var cooldownInSeconds = 9;
+var downloadTimer = setInterval(function(){
+  if(cooldownInSeconds <= 1){
+    clearInterval(downloadTimer);
+  }
+  $("#submitButton").val(cooldownInSeconds);
+
+  cooldownInSeconds -= 1;
+}, 1000);
 }

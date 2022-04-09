@@ -1,44 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Riddle02</title>
-  </head>
-  <body>
 
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Riddle01</title>
+</head>
+
+<body>
+
+  <div id="masterDiv">
     <div id="question">
-
-
       <h1>Drive.</h1>
-
     </div>
-
-      <div id="userInputDiv">
-
-
-      <input id="userInput" type="text" name="" value="???">
-      <input id="submitButton" type="submit" value="OK">
-
+    <div id="userInputDiv">
+      <input id="userInput" onfocus="this.value=''" class="userInputReady" type="text" name="" value="???">
+      <input id="submitButton" class="submitButtonReady" type="submit" value="OK">
     </div>
-
-
     <div id="answerDiv">
-
-
-      <h1 id="answer"> </h1>
-
       <a hidden id="continue" href="../../HubPages/HubPage02/index.html">
-        <input id="submitButton" type="submit" value="continue">
+        <input id="continueButton" class="submitButtonReady" type="submit" value="correct! click to continue">
       </a>
-
     </div>
-
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js" charset="utf-8"></script>
-  </body>
+  </div>
+</body>
 
 </html>
