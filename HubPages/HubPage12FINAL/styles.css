@@ -1,0 +1,83 @@
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  padding-top: 10px;
+  height: 850px;
+}
+
+div {
+  text-align: center;
+}
+
+h1 {
+  color: #00FF21;
+  font-family: monospace;
+  text-align: center;
+}
+
+img {
+  cursor: help;
+}
+
+#masterDiv {
+  margin: auto;
+   padding: 300px 0;
+}
+
+
+
+
+
+
+
+#userInputDiv {
+  margin: auto;
+   padding: 10px 0;
+
+}
+
+
+
+@-webkit-keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+         opacity: 1;
+    }
+}
+@-moz-keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+         opacity: 1;
+    }
+}
+
+@keyframes fading {
+    from {
+        opacity: 0;
+    }
+    to {
+         opacity: 1;
+    }
+}
+
+#toFade {
+    opacity: 0;
+    -webkit-animation: fading ease-in 3.5s;
+    animation: fading ease-in 3.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 3.5s;
+    animation-duration: 3.5s;
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+}

@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Riddle08</title>
-  </head>
-  <body>
-    <h1>I am not alive, but I grow. I don't have lungs, but I need air. I don't have a mouth but water kills me. What am I?</h1>
-    <input id="userInput" type="text" name="" value="???">
-    <input id="submitButton" type="submit">
 
-    <h1 id="answer" hidden></h1>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Riddle08</title>
+</head>
 
-      <h2 hidden id="continue2">remember to put the time code here for the ring doorbell</h2>
+<body>
 
-    <a hidden id="continue" href="../../HubPages/HubPage08/index.html">
-      <input type="submit">
-    </a>
+  <div id="masterDiv">
+    <div id="question">
+      <h1>Which two words,</h1>
+      <h1>When combined,</h1>
+      <h1>Contain the most letters?</h1>
+    </div>
+    <div id="userInputDiv">
+      <input id="userInput" onfocus="this.value=''" class="userInputReady" type="text" name="" value="???">
+      <input id="submitButton" class="submitButtonReady" type="submit" value="OK">
+    </div>
+    <div id="answerDiv">
+<h1 hidden id="answer">test</h1>
+      <a hidden id="continue" href="../../HubPages/HubPage08/index.html">
+        <input id="continueButton" class="submitButtonReady" type="submit" value="correct! click to continue">
+      </a>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js" charset="utf-8"></script>
-  </body>
+  </div>
+</body>
 
 </html>

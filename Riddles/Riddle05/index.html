@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Riddle05</title>
-  </head>
-  <body>
-    <h1>Which two words combined contain the most letters?</h1>
-    <input id="userInput" type="text" name="" value="???">
-    <input id="submitButton" type="submit">
 
-    <h1 id="answer" hidden></h1>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Riddle05</title>
+</head>
 
-      <h2 hidden id="continue2">Now put on your shoes and take a high view</h2>
+<body>
 
-    <a hidden id="continue" href="../../HubPages/HubPage05/index.html">
-      <input type="submit">
-    </a>
+  <div id="masterDiv">
+    <div id="question">
+      <h1>THREE POINT ONE FOUR ONE FIVE NINE TWO SIX FIVE THREE</h1>
+      <h1>FIVE EIGHT NINE SEVEN NINE THREE TWO THREE EIGHT FOUR</h1>
+      <h1>SIX TWO SIX FOUR THREE THREE EIGHT THREE ETC ETC ETC</h1><BR>
+      <h1>What am I?</h1>
+    </div>
+    <div id="userInputDiv">
+      <input id="userInput" onfocus="this.value=''" class="userInputReady" type="text" name="" value="???">
+      <input id="submitButton" class="submitButtonReady" type="submit" value="OK">
+    </div>
+    <div id="answerDiv">
+<h1 hidden id="answer">test</h1>
+      <a hidden id="continue" href="../../HubPages/HubPage05/index.html">
+        <input id="continueButton" class="submitButtonReady" type="submit" value="correct! click to continue">
+      </a>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js" charset="utf-8"></script>
-  </body>
+  </div>
+</body>
 
 </html>

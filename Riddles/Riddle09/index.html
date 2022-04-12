@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Riddle09</title>
-  </head>
-  <body>
-    <h1>THREE POINT ONE FOUR ONE FIVE NINE TWO SIX FIVE THREE FIVE EIGHT NINE SEVEN NINE THREE TWO THREE EIGHT FOUR SIX TWO SIX FOUR THREE THREE EIGHT THREE TWO SEVEN NINE FIVE ZERO TWO EIGHT EIGHT FOUR ONE NINE SEVEN ONE
-SIX NINE THREE NINE NINE THREE SEVEN FIVE ONE ZERO FIVE EIGHT TWO ZERO NINE SEVEN FOUR NINE FOUR FOUR FIVE NINE TWO THREE ZERO SEVEN EIGHT ONE SIX FOUR ZERO SIX TWO EIGHT SIX TWO ZERO EIGHT NINE NINE
-EIGHT SIX TWO EIGHT ZERO THREE FOUR EIGHT TWO FIVE THREE FOUR TWO ONE ONE SEVEN ZERO SIX SEVEN NINE ETC ETC ETC. WHAT AM I? </h1>
 
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Riddle09</title>
+</head>
 
-    <input id="userInput" type="text" name="" value="???">
-    <input id="submitButton" type="submit">
+<body>
 
-    <h1 id="answer" hidden></h1>
-
-
-
-    <a hidden id="continue" href="../../HubPages/HubPage09/index.html">
-      <input type="submit">
-    </a>
+  <div id="masterDiv">
+    <div id="question">
+      <h1>We never get tired of going around and around,</h1>
+      <h1>There's five of us here,</h1>
+      <h1>But I'm not touching the ground.</h1><br>
+      <h1>What am I?</h1>
+    </div>
+    <div id="userInputDiv">
+      <input id="userInput" onfocus="this.value=''" class="userInputReady" type="text" name="" value="???">
+      <input id="submitButton" class="submitButtonReady" type="submit" value="OK">
+    </div>
+    <div id="answerDiv">
+<h1 hidden id="answer">test</h1>
+      <a hidden id="continue" href="../../HubPages/HubPage09/index.html">
+        <input id="continueButton" class="submitButtonReady" type="submit" value="correct! click to continue">
+      </a>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js" charset="utf-8"></script>
-  </body>
+  </div>
+</body>
 
 </html>
