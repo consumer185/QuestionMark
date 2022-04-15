@@ -7,20 +7,40 @@ a {
 }
 
 img {
-  
-  padding: 10px;
+width: 100px;
 }
 
-div {
-  text-align: center;
-}
 
 #masterDiv {
-  margin: auto;
-   padding: 75px 0;
+  text-align: center;
+  width: 300px;
+  margin: 40px auto;
+   padding: 40px 0;
 }
 
 
+.introText {
+  color: #00FF21;
+  font-family: monospace;
+  margin: auto;
+  margin-top: 200px;
+  width: 600px;
+  text-align: center;
+  line-height: 100%;
+
+}
+
+h1 {
+font-size: 2.5rem;
+}
+
+h2 {
+font-size: 2rem;
+}
+
+h3 {
+font-size: 1.5rem;
+}
 
 #target {
   -webkit-animation: fade 1s alternate infinite;
